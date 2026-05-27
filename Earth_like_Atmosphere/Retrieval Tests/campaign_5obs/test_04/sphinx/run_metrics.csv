@@ -1,7 +1,0 @@
-id,branch,f_spot,f_fac,strategy,MSE,chi2_reduced
-test_04,sphinx,0.01,0.08,gdae,3.598449555e-10,0.09030885097
-test_04,sphinx,0.08,0.54,gdae,3.333779461e-10,0.08416132805
-test_04,sphinx,0.26,0.70,gdae,3.324100681e-10,0.0842978609
-test_04,sphinx,0.01,0.08,contam,7.520489449e-10,0.4373503977
-test_04,sphinx,0.08,0.54,contam,6.1490799e-10,0.2711435271
-test_04,sphinx,0.26,0.70,contam,1.58471233e-08,8.008831765

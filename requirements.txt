@@ -1,0 +1,14 @@
+# NOTE: For notebooks that import pandexo.engine.justdoit, use Python 3.12.x.
+# On Python 3.13, pandexo-engine currently fails at import time with NumPy 2.x.
+matplotlib
+numpy
+pandas
+scikit-learn
+tensorflow
+seaborn
+joblib
+tqdm
+pandexo-engine
+multirex
+taurex
+POSEIDON

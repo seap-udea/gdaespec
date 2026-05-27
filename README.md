@@ -5,7 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2602.10330-b31b1b.svg)](https://arxiv.org/abs/2602.10330)
 
 <div align="center">
-  <img src="G-DAE_logo.webp" alt="G-DAESpec logo" width="520"/>
+  <img src="gallery/G-DAE_logo.webp" alt="G-DAESpec logo" width="520"/>
 </div>
 
 This repository accompanies:
@@ -18,41 +18,44 @@ The code tests a General Denoising AutoEncoder (G-DAE) for transmission
 spectra affected by stellar contamination and observational noise. The project
 is organized around the two experiments discussed in the paper:
 
-1. `Earth_like_Atmosphere/`: TRAPPIST-1e analogue, including G-DAE training,
+1. `training-and-experiments/Earth_like_Atmosphere/`: TRAPPIST-1e analogue, including G-DAE training,
    uncertainty-aware reconstruction, SPHINX/PHOENIX stellar contamination
    checks, and POSEIDON retrieval tests.
-2. `Sub_Neptune_Atmosphere/`: K2-18b analogue, including spectra generation,
+2. `training-and-experiments/Sub_Neptune_Atmosphere/`: K2-18b analogue, including spectra generation,
    stellar contamination, autoencoder training, and evaluation.
+
+The parameters of the trained models, as well as an example of how to use them,
+are available in [model-parameters/](model-parameters/).
 
 ## Repository Map
 
 | Path | Purpose |
 | --- | --- |
-| [Earth_like_Atmosphere/](Earth_like_Atmosphere/) | Main Earth-like/TRAPPIST-1e experiment. |
-| [Earth_like_Atmosphere/Retrieval Tests/](Earth_like_Atmosphere/Retrieval%20Tests/) | POSEIDON five-observation retrieval campaign. |
-| [Earth_like_Atmosphere/stellar_contamination/](Earth_like_Atmosphere/stellar_contamination/) | PHOENIX and SPHINX stellar-contamination curves used by the Earth-like workflow. |
-| [Earth_like_Atmosphere/spec_data/](Earth_like_Atmosphere/spec_data/) | Earth-like spectral datasets derived from the referenced MultiREx example. |
-| [Sub_Neptune_Atmosphere/](Sub_Neptune_Atmosphere/) | K2-18b/Sub-Neptune experiment. |
-| [examples/](examples/) | Minimal example notebook for applying a trained G-DAE model. |
+| [training-and-experiments/Earth_like_Atmosphere/](training-and-experiments/Earth_like_Atmosphere/) | Main Earth-like/TRAPPIST-1e experiment. |
+| [training-and-experiments/Earth_like_Atmosphere/Retrieval Tests/](training-and-experiments/Earth_like_Atmosphere/Retrieval%20Tests/) | POSEIDON five-observation retrieval campaign. |
+| [training-and-experiments/Earth_like_Atmosphere/stellar_contamination/](training-and-experiments/Earth_like_Atmosphere/stellar_contamination/) | PHOENIX and SPHINX stellar-contamination curves used by the Earth-like workflow. |
+| [training-and-experiments/Earth_like_Atmosphere/spec_data/](training-and-experiments/Earth_like_Atmosphere/spec_data/) | Earth-like spectral datasets derived from the referenced MultiREx example. |
+| [training-and-experiments/Sub_Neptune_Atmosphere/](training-and-experiments/Sub_Neptune_Atmosphere/) | K2-18b/Sub-Neptune experiment. |
+| [model-parameters/](model-parameters/) | Minimal notebooks and model files for applying trained G-DAE models. |
 
 ## Main Workflows
 
 Recommended reading order:
 
 1. Start with this README.
-2. Open [examples/Quick_Start_GDAE_Workflow.ipynb](examples/Quick_Start_GDAE_Workflow.ipynb)
+2. Open [model-parameters/G-DAE-Example.ipynb](model-parameters/G-DAE-Example.ipynb)
    for the shortest application-oriented workflow.
-3. Open [Earth_like_Atmosphere/README.md](Earth_like_Atmosphere/README.md) for
+3. Open [training-and-experiments/Earth_like_Atmosphere/README.md](training-and-experiments/Earth_like_Atmosphere/README.md) for
    the TRAPPIST-1e case.
 4. Open
-   [Earth_like_Atmosphere/Retrieval Tests/README.md](Earth_like_Atmosphere/Retrieval%20Tests/README.md)
+   [training-and-experiments/Earth_like_Atmosphere/Retrieval Tests/README.md](training-and-experiments/Earth_like_Atmosphere/Retrieval%20Tests/README.md)
    for the retrieval validation workflow.
-5. Open [Sub_Neptune_Atmosphere/README.md](Sub_Neptune_Atmosphere/README.md)
+5. Open [training-and-experiments/Sub_Neptune_Atmosphere/README.md](training-and-experiments/Sub_Neptune_Atmosphere/README.md)
    for the K2-18b case.
 
 ### Earth-like atmosphere
 
-Use [Earth_like_Atmosphere/README.md](Earth_like_Atmosphere/README.md) for the
+Use [training-and-experiments/Earth_like_Atmosphere/README.md](training-and-experiments/Earth_like_Atmosphere/README.md) for the
 local workflow. The shortest reading order is:
 
 1. `01_G-DAE.ipynb`: data assembly and G-DAE training.
@@ -62,7 +65,7 @@ local workflow. The shortest reading order is:
 
 ### Sub-Neptune atmosphere
 
-Use [Sub_Neptune_Atmosphere/README.md](Sub_Neptune_Atmosphere/README.md). The
+Use [training-and-experiments/Sub_Neptune_Atmosphere/README.md](training-and-experiments/Sub_Neptune_Atmosphere/README.md). The
 notebooks are numbered in execution order:
 
 1. `01_Spectra_Generation.ipynb`
@@ -74,6 +77,9 @@ notebooks are numbered in execution order:
 
 The notebooks and scripts are scientific workflows rather than a packaged
 Python library. They require a Python/Jupyter environment with:
+
+- Install dependencies from [requirements.txt](requirements.txt):
+   `pip install -r requirements.txt`
 
 - [MultiREx](https://github.com/D4san/MultiREx-public)
 - [POSEIDON](https://github.com/MartianColonist/POSEIDON)
@@ -105,3 +111,5 @@ The repository contents fall into three categories:
 ## License
 
 This repository is released under the [MIT License](LICENSE).
+
+Copyright (C) 2026-present Duque-Castaño, Zuluaga, and Flor-Torres.

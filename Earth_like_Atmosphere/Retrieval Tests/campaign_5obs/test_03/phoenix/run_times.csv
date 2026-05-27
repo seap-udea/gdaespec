@@ -1,9 +1,0 @@
-id,branch,f_spot,f_fac,strategy,delta_time
-test_03,phoenix,0.00,0.00,gdae,19.47490091
-test_03,phoenix,0.01,0.08,gdae,20.41882418
-test_03,phoenix,0.08,0.54,gdae,18.88035682
-test_03,phoenix,0.26,0.70,gdae,19.64214751
-test_03,phoenix,0.00,0.00,contam,74.91712984
-test_03,phoenix,0.01,0.08,contam,174.5985807
-test_03,phoenix,0.08,0.54,contam,232.4862957
-test_03,phoenix,0.26,0.70,contam,227.0589736

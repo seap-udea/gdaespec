@@ -1,6 +1,0 @@
-plots/
-test_*/**/figures/
-test_*/**/observations/
-test_*/**/pandexo_inputs/
-test_*/**/POSEIDON_output/
-__pycache__/
