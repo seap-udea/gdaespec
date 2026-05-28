@@ -19,6 +19,9 @@ venv.bak/
 .vscode/
 .idea/
 
+# macOS metadata
+.DS_*
+
 # Local scratch outputs
 tmp/
 *.tmp
