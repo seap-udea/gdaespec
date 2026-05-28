@@ -8,11 +8,21 @@
   <img src="gallery/G-DAE_logo.webp" alt="G-DAESpec logo" width="520"/>
 </div>
 
-This repository accompanies:
+This repository accompanies the paper:
 
-> **Efficient reduction of stellar contamination and noise in planetary transmission spectra using neural networks**<br>
-> Duque-Castaño, Zuluaga & Flor-Torres<br>
-> arXiv: [2602.10330](https://arxiv.org/abs/2602.10330)
+```bibtex
+@misc{duque-castano2026gdaespec,
+   title = {Efficient reduction of stellar contamination and noise in planetary transmission spectra using neural networks},
+   author = {David S. Duque-Casta\~no and Lauren Flor-Torres and Jorge I. Zuluaga},
+   year = {2026},
+   eprint = {2602.10330},
+   archivePrefix = {arXiv},
+   primaryClass = {astro-ph.EP},
+   doi = {10.48550/arXiv.2602.10330},
+   url = {https://arxiv.org/abs/2602.10330}
+}
+```
+
 
 The code tests a General Denoising AutoEncoder (G-DAE) for transmission
 spectra affected by stellar contamination and observational noise. The project
